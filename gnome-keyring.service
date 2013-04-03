@@ -1,0 +1,13 @@
+[Unit]
+Description=GNOME Keyring
+Before=environment.target
+#After=dbus.socket
+#Requires=dbus.socket
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c 'systemctl --user set-environment $(gnome-keyring-daemon --start --components=secrets,ssh,gpg)'
+RemainAfterExit=true
+
+[Install]
+WantedBy=environment.target

@@ -1,0 +1,11 @@
+[Unit]
+
+Description=Openbox and Cairo-Dock Desktop Session
+AllowIsolate=true
+
+Requires=desktop-basic.target
+Requires=openbox.service
+Requires=glx-dock.service
+Requires=xcompmgr.service
+
+Wants=gnome-sound-applet.service

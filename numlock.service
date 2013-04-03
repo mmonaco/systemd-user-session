@@ -1,0 +1,8 @@
+[Unit]
+Description=numlockx
+
+[Service]
+ExecStart=/usr/bin/numlockx on
+
+[Install]
+WantedBy=desktop.target

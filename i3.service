@@ -1,0 +1,8 @@
+[Unit]
+Description=i3 Window Manager
+After=environment.target
+Conflicts=openbox.service
+
+[Service]
+ExecStart=@/usr/bin/i3 i3
+KillMode=process

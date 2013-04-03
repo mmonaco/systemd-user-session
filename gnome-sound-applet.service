@@ -1,0 +1,8 @@
+[Unit]
+Description=GNOME Sound Applet
+After=environment.target
+Requires=pulseaudio.service
+
+[Service]
+BusName=org.gnome.VolumeControlApplet
+ExecStart=@/usr/bin/gnome-sound-applet gnome-sound-applet

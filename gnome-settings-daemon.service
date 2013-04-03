@@ -1,0 +1,9 @@
+[Unit]
+Description=GNOME Settings Daemon
+After=environment.target
+Requires=pulseaudio.service
+After=pulseaudio.service
+
+[Service]
+BusName=org.gnome.SettingsDaemon
+ExecStart=@/lib/gnome-settings-daemon/gnome-settings-daemon gnome-settings-daemon

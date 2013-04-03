@@ -1,0 +1,7 @@
+[Unit]
+Description=XBMC Media Center
+Requires=dbus.socket
+
+[Service]
+ExecStart=/usr/bin/xbmc-standalone
+ExecStopPost=/usr/bin/systemctl --user isolate default.target

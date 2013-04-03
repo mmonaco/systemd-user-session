@@ -1,0 +1,14 @@
+[Unit]
+
+Description=Basic Graphical Desktop
+
+Requires=environment.target
+Requires=dbus.service
+
+Wants=gnome-screensaver.service
+Wants=gnome-settings-daemon.service
+Wants=set-background.service
+Wants=numlock.service
+Wants=pulseaudio.service
+
+Wants=bluetooth-applet.service

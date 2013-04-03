@@ -1,0 +1,9 @@
+[Unit]
+
+Description=i3 Desktop Session
+AllowIsolate=true
+
+Requires=desktop-basic.target
+Requires=i3.service
+
+Wants=gnome-sound-applet.service

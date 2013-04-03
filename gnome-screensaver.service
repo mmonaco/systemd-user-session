@@ -1,0 +1,6 @@
+[Unit]
+Description=GNOME Screensaver
+
+[Service]
+BusName=org.gnome.ScreenSaver
+ExecStart=@/usr/bin/gnome-screensaver gnome-screensaver --no-daemon

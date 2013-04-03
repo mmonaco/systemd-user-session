@@ -1,0 +1,10 @@
+[Unit]
+Description=XBMC Session
+AllowIsolate=true
+
+BindsTo=xbmc.service
+Requires=xbmc.service
+Requires=desktop-basic.target
+
+OnFailure=default.target
+OnFailureIsolate=true

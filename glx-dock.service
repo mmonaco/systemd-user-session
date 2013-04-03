@@ -1,0 +1,9 @@
+[Unit]
+Description=Cairo Dock (OpenGL)
+After=environment.target
+After=xcompmgr.service
+
+[Service]
+ExecStart=@/usr/bin/cairo-dock cairo-dock -o
+#BusName=org.cairodock.CairoDock
+KillMode=process

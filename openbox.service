@@ -1,0 +1,7 @@
+[Unit]
+Description=Openbox Window Manager
+After=environment.target
+
+[Service]
+ExecStart=@/usr/bin/openbox openbox --sm-disable
+KillMode=process

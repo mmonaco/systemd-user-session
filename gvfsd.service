@@ -1,0 +1,6 @@
+[Unit]
+Description=GNOME Virtual File System Daemon
+
+[Service]
+BusName=org.gtk.vfs.Daemon
+ExecStart=@/usr/lib/gvfs/gvfsd gvfsd

@@ -1,0 +1,6 @@
+[Unit]
+Description=GConf Daemon
+
+[Service]
+BusName=org.gnome.GConf
+ExecStart=@/usr/lib/GConf/gconfd-2 gconfd

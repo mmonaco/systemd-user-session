@@ -1,0 +1,9 @@
+[Unit]
+Description=X11VNC server
+Documentation=man:x11vnc
+
+[Service]
+ExecStart=@/usr/bin/x11vnc x11vnc -N -quiet -nap -forever -localhost -display WAIT:
+
+[Install]
+WantedBy=desktop.target
